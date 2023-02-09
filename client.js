@@ -5,7 +5,7 @@ TrelloPowerUp.initialize({
   'board-buttons': function (t, opts) {
     return [{
       icon: '',
-      text: 'Callback',
+      text: 'Progression',
       callback: function(t) {
         return t.popup({
           title: "Finished List",
