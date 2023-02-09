@@ -4,11 +4,11 @@ var WHITE_ROCKET_ICON = 'https://cdn.glitch.com/c69415fd-f70e-4e03-b43b-98b8960c
 TrelloPowerUp.initialize({
   'board-buttons': function (t, opts) {
     return [{
-      icon: '',
+      icon: 'https://cdn-icons-png.flaticon.com/512/7154/7154465.png',
       text: 'Progression',
       callback: function(t) {
         return t.popup({
-          title: "Finished List",
+          title: "Progression",
           url: "estimate.html"
         });
       },
