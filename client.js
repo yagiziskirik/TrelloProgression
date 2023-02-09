@@ -24,6 +24,21 @@ TrelloPowerUp.initialize({
       }];
     });
   },
+  'board-buttons': function (t, opts) {
+    return [{
+      icon: {
+        dark: WHITE_ICON,
+        light: BLACK_ICON
+      },
+      text: 'Callback',
+      callback: function(t) {
+        return t.popup({
+          title: "Finished List",
+          url: "estimate.html"
+        });
+      },
+    }];
+  },
   'card-detail-badges': function(t, options) {
     return t.get('card', 'shared', 'estimate')
     .then(function(estimate) {
