@@ -4,10 +4,7 @@ var WHITE_ROCKET_ICON = 'https://cdn.glitch.com/c69415fd-f70e-4e03-b43b-98b8960c
 TrelloPowerUp.initialize({
   'board-buttons': function (t, opts) {
     return [{
-      icon: {
-        dark: WHITE_ICON,
-        light: BLACK_ICON
-      },
+      icon: '',
       text: 'Callback',
       callback: function(t) {
         return t.popup({
@@ -16,5 +13,5 @@ TrelloPowerUp.initialize({
         });
       },
     }];
-  }
+  },
 });
